@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6935cf595319a2640b4a18790f1529fc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Editor/CAtlasData.cs
+  uploadId: 416575

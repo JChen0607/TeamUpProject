@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 37a6930a5f1a4644c8e43d79b9307419
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/ThirdParty/Newtonsoft.Json.xml
+  uploadId: 416575

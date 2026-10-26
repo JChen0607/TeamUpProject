@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f2e0ff80f9094f640b8359812214643b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Editor/CAsepriteManager.cs
+  uploadId: 416575

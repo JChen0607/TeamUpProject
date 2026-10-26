@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7f18125be80c33348b50f6f3cf0ee7e1
+timeCreated: 1501181862
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/FiletypeEditor/Editor/CustomFileTypeAttribute.cs
+  uploadId: 416575

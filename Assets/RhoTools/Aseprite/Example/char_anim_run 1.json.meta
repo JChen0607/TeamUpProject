@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d70d16b1310e64271af0a8cff46c35cb
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Example/char_anim_run 1.json
+  uploadId: 416575

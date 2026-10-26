@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
         healthUI.SetMaxHearts(maxHealth);
     }
 
-   private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Enemy enemy = collision.GetComponent<Enemy>();
         if (enemy)
@@ -23,14 +23,14 @@ public class PlayerHealth : MonoBehaviour
             TakeDamage(enemy.damage);
         }
     }
-    private void TakeDamage(int damage)
+  public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthUI.UpdateHearts(currentHealth);
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Player is dead!");
+            Destroy(gameObject);
         }
     }
 }

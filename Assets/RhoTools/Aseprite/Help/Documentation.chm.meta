@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4785bf94dc529394fab93964de05b428
+timeCreated: 1489449558
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Help/Documentation.chm
+  uploadId: 416575

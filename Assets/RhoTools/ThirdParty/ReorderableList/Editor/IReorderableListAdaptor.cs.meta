@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 038f674877fbaab49a0024418070e935
+timeCreated: 1496608633
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/ThirdParty/ReorderableList/Editor/IReorderableListAdaptor.cs
+  uploadId: 416575

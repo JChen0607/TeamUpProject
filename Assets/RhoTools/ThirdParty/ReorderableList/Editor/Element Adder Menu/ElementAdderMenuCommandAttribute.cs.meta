@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e1caee077db64c744bfd9242709d9c64
+timeCreated: 1496608633
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/ThirdParty/ReorderableList/Editor/Element Adder Menu/ElementAdderMenuCommandAttribute.cs
+  uploadId: 416575

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 98553a0e487551749b42dbe837e7e49a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Help/Aseprite Manual.pdf
+  uploadId: 416575

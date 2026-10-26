@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0224b0139fa8a3c4ca5f7ac7b8a01770
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Example/Demo.unity
+  uploadId: 416575

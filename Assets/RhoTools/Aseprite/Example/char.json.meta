@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ddb299928e29f4a758f5de5b5f8386fc
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Example/char.json
+  uploadId: 416575

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 489fff7c645d74ec782d8be7d3eafa4f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67903
+  packageName: Aseprite importer
+  packageVersion: 3.1p1
+  assetPath: Assets/RhoTools/Aseprite/Example/char_anim_run 1.prefab
+  uploadId: 416575
