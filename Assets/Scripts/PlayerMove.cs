@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 5f;
+    [SerializeField] private float walkSpeed = 5f;
+    [SerializeField] private float sprintSpeed = 9f;
     private float jumpingPower = 8f;
     private bool isFacingRight= true;
 
@@ -16,11 +17,11 @@ public class PlayerMove : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && IsGrounded()) // this checks if nova is on the ground 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
         }
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)
+        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0f)  // this checks if nova is in the air
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
@@ -28,9 +29,16 @@ public class PlayerMove : MonoBehaviour
         Flip();
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() //this allows nova to dash foward depending on which way that she is loooking
     {
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift)
+            ? sprintSpeed
+            : walkSpeed;
+
+        rb.linearVelocity = new Vector2(
+            horizontal * currentSpeed,
+            rb.linearVelocity.y
+        );
     }
 
     private bool IsGrounded()
@@ -47,6 +55,7 @@ public class PlayerMove : MonoBehaviour
         localScale.x *= -1f;
         transform.localScale = localScale;
         }
+    
     }
 
     

@@ -1,6 +1,5 @@
+
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,30 +7,43 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
 
     public HealthUI healthUI;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         currentHealth = maxHealth;
-        healthUI.SetMaxHearts(maxHealth);
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Enemy enemy = collision.GetComponent<Enemy>();
-        if (enemy)
+        if (healthUI != null)
         {
-            TakeDamage(enemy.damage);
+            healthUI.SetMaxHearts(maxHealth);
+            healthUI.UpdateHearts(currentHealth);
+        }
+        else
+        {
+            Debug.LogWarning("HealthUI is not assigned!");
         }
     }
-  public void TakeDamage(int damage)
+
+    public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthUI.UpdateHearts(currentHealth);
+        if (currentHealth <= 0 || damage <= 0)
+            return;
+
+        currentHealth = Mathf.Max(0, currentHealth - damage);
+
+        if (healthUI != null)
+        {
+            healthUI.UpdateHearts(currentHealth);
+        }
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
-}
 
+    private void Die()
+    {
+        Debug.Log("Nova has died!");
+        Destroy(gameObject);
+    }
+}
