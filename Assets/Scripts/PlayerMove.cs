@@ -11,7 +11,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    
+    [SerializeField] private Animator animator;
     // Update is called once per frame
     void Update()
     {
@@ -25,8 +25,26 @@ public class PlayerMove : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
+        if( horizontal != 0f)
+        {
+            animator.SetBool("IsRunning", true);
+        }
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
 
         Flip();
+        if( rb.linearVelocity.y > 0f)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+       
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
     }
 
     private void FixedUpdate() //this allows nova to dash foward depending on which way that she is loooking
@@ -38,6 +56,8 @@ public class PlayerMove : MonoBehaviour
         rb.linearVelocity = new Vector2(
             horizontal * currentSpeed,
             rb.linearVelocity.y
+
+            
         );
     }
 

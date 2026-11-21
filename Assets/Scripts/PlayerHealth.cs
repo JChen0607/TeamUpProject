@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage )
     {
         if (currentHealth <= 0 || damage <= 0)
             return;
@@ -35,15 +36,19 @@ public class PlayerHealth : MonoBehaviour
             healthUI.UpdateHearts(currentHealth);
         }
 
-        if (currentHealth <= 0)
+     /*   if (currentHealth <= 0)
         {
             Die();
-        }
+        } */
+
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("Nova has died!");
         Destroy(gameObject);
+      
+
+
     }
 }

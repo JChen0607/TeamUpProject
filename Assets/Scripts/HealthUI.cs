@@ -30,6 +30,7 @@ public class HealthUI : MonoBehaviour
 
     public void UpdateHearts(int currentHealth)
     {
+       
         for (int i = 0; i < hearts.Count; i++)
         {
             if (i < currentHealth)
